@@ -1,0 +1,29 @@
+tickers: ["SBER"]
+news_window_hours: 12 
+forecast_horizon: "next_day_close" 
+timezone: "Europe/Moscow" 
+
+telegram_channels:
+	- "ifax_go"
+	- "tass_agency"
+	- "finanz_ru"
+
+moex_timezone: "Europe/Moscow" 
+trading_hours:
+	start: "09:30"
+	end: "18:40" 
+	
+llm_provider: "openai"
+llm_model: "gpt-4" 
+cache_llm_responses: true 
+
+data_period:
+	train_start: "2024-01-01" 
+	train_end: "2024-09-30" 
+	val_start: "2024-10-01" 
+	val_end: "2024-12-31"
+	test_start: "2025-01-01" 
+	test_end: "2025-03-01" 
+
+classification_method: "direct"
+confidence_threshold: 0.6 
